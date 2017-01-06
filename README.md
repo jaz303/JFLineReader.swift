@@ -1,4 +1,4 @@
-# JFFileLineReader
+# JFLineReader
 
 Read a file line by line.
 

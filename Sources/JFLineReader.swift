@@ -1,6 +1,6 @@
 import Foundation
 
-public class JFFileLineReader: Sequence, IteratorProtocol {
+public class JFLineReader: Sequence, IteratorProtocol {
     init?(path: String, maxLength: Int = 8192, encoding: String.Encoding = String.Encoding.utf8) {
         self.file = fopen(path, "r")
         self.bufferSize = Int32(maxLength)
