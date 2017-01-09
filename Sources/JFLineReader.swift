@@ -22,6 +22,10 @@ public class JFLineReader: Sequence, IteratorProtocol {
         }
     }
 
+    public func rewind() {
+        fseek(file, 0, SEEK_SET)
+    }
+
     private let file: UnsafeMutablePointer<FILE>!
     private let bufferSize: Int32
     private let buffer: UnsafeMutablePointer<Int8>!

@@ -9,4 +9,9 @@ let reader = JFLineReader(path: "test.txt", maxLength: 1024, encoding: String.En
 for line in reader {
 	print(line)
 }
+
+reader.rewind()
+for line in reader {
+	print(line)
+}
 ```
